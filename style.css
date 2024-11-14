@@ -1,0 +1,120 @@
+
+
+/* === Глобальні стилі === */
+body {
+    min-height: 100vh;
+    background: linear-gradient(196deg, #e96443, #904e95);
+    animation: animatebg 5s ease infinite;
+    background-size: 200%;
+    font-size: 20px;
+    font-family: italic;
+}
+
+p {
+    text-indent: 40px;
+}
+
+img {
+    height: 300px;
+    width: 500px;
+    border-radius: 16px;
+    
+}
+
+/* Анімації */
+@keyframes animatebg {
+    0% {
+        background-position: 0;
+    }
+    50% {
+        background-position: 100%;
+    }
+    100% {
+        background-position: 0;
+    }
+}
+
+/* === Стилі навігації (ul, li, посилання) === */
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+}
+
+li {
+    margin: 0;
+    border-radius: 10px;
+    background: rgba(128, 30, 0, 0.8);
+    transition: 1s;
+    /* width: auto; */
+    /* padding: 10px 20px; */
+}
+
+li:hover {
+    background: rgba(128, 30, 0, 1);
+    transform: translateY(-5px);
+}
+
+/* li:hover.Active {
+    color: rgba(128, 30, 0, 1);
+    background-color: #ffffff;
+    transform: translateY(-5px);
+} */
+
+a {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+
+/* === Класи === */
+/* .btn {
+    text-align: center;
+}
+
+.btn:hover {
+    color: white;
+} */
+
+.center {
+    background-color: #e7ecea;
+    width: fit-content;
+    margin: 0 auto;
+    border-radius: 16px;
+    /* padding-bottom: 19px; */
+    padding: 16px;
+    text-align: center;
+}
+
+.no-style {
+    all: unset;
+    display: list-item;
+}
+
+.no-style:hover {
+    background: none;
+    transform: none;
+}
+
+.Active {
+    color: rgba(128, 30, 0, 0.8);
+    background-color: #e7ecea;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 10px;
+    font-weight: bold;
+    /* font-weight: inherit;
+    font-family: italic;
+    font-size: inherit; 
+    line-height: inherit; */
+    /* border:  #e7ecea 1px solid; */
+}
+
+.Active:hover {
+    color:  rgba(128, 30, 0, 10);
+}
