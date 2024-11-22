@@ -30,3 +30,20 @@ function onChangeNavigation(event) {
     currentButton.classList.add("btnActive");
     currentContent.classList.add("contentShow");
 }
+
+
+
+/*Відкриття модального вікна кликанням на "Залишити заяву на дзвінок" button*/
+document.getElementById("open-modal-btn").addEventListener("click", function(){
+    document.getElementById("my-modal").classList.add("open")
+}) // у HTML знаходимо кнопку document.getElementById з ID "open-modal-btn", прикріпляємо дію "click", показуємо модальне вікно по ID "my-modal", додаємо клас "open"
+
+/*Відкриття модального вікна кликанням на "Залишити заяву на дзвінок" button*/
+document.getElementById("open-modal-icon").addEventListener("click", function(){
+    document.getElementById("my-modal").classList.add("open")
+}) // у HTML знаходимо кнопку document.getElementById з ID "open-modal-icon", прикріпляємо дію "click", показуємо модальне вікно по ID "my-modal", додаємо клас "open"
+
+/*Закривання модального вікна кликанням на "X" button*/
+document.getElementById("close-my-modal-btn").addEventListener("click", function(){
+    document.getElementById("my-modal").classList.remove("open")
+}) // у HTML знаходимо кнопку document.getElementById з ID "close-my-modal-btn", прикріпляємо дію "click", показуємо модальне вікно по ID "my-modal", видаляємо клас "open"
