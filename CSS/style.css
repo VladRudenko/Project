@@ -264,6 +264,8 @@ ul {
     transition: opacity .4s, visibility .4s; /*затримка анімації*/
     /* border:none; */
     cursor: pointer; /*зміна курсору при наведенні*/
+    backdrop-filter: blur(4px);         /* Розмиття фону */
+    -webkit-backdrop-filter: blur(4px); /* Для Safari */
 }
 
 .modal_box {
